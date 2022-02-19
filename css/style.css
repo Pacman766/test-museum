@@ -140,3 +140,127 @@ body {
   font-size: 18px;
   margin-top: 8px;
 }
+
+@media (max-width: 1416px) {
+  .main__container {
+    max-width: 984px;
+    padding: 0;
+  }
+  .main__title h1 {
+    font-size: 50px;
+    margin-top: 64px;
+    margin-left: 0;
+  }
+  .main__title h1::after {
+    width: 984px;
+    bottom: -14px;
+  }
+  .main__galary {
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    margin-top: 74px;
+    -webkit-column-gap: 0px;
+            column-gap: 0px;
+    padding: 0 55px;
+  }
+  .item-main {
+    margin-bottom: 47px;
+    left: 0;
+  }
+  .item-main__img img {
+    width: 330px;
+    height: 215px;
+  }
+  .item-main__title h3 {
+    font-size: 28px;
+    letter-spacing: 3px;
+    margin-top: 22px;
+  }
+  .item-main__title h3::after {
+    width: 150px;
+    bottom: -9px;
+  }
+  .item-main__text p {
+    font-size: 20px;
+  }
+  .item-main__text p:last-child {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 1015px) {
+  .main__container {
+    max-width: 728px;
+    padding: 0;
+  }
+  .main__title h1 {
+    font-size: 40px;
+    margin-top: 64px;
+    margin-left: 0;
+  }
+  .main__title h1::after {
+    width: 728px;
+    bottom: -6px;
+  }
+  .main__galary {
+    margin-top: 46px;
+    padding: 0px 28px;
+  }
+  .item-main {
+    margin-bottom: 19px;
+    left: 0;
+  }
+  .item-main__img img {
+    width: 280px;
+    height: 180px;
+  }
+  .item-main__title h3 {
+    font-size: 22px;
+    letter-spacing: 3px;
+    margin-top: 18px;
+  }
+  .item-main__title h3::after {
+    width: 150px;
+    bottom: -7px;
+  }
+  .item-main__text p {
+    font-size: 18px;
+  }
+  .item-main__text p:last-child {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 768px) {
+  .main__container {
+    max-width: 380px;
+  }
+  .main__title h1 {
+    font-size: 28px;
+    margin-top: 18px;
+  }
+  .main__title h1::after {
+    width: 380px;
+    bottom: 3px;
+  }
+  .main__galary {
+    margin-top: 37px;
+  }
+  .item-main {
+    margin-bottom: 16px;
+  }
+  .item-main__img img {
+    width: 280px;
+    height: 180px;
+  }
+  .item-main__title h3 {
+    font-size: 18px;
+    letter-spacing: 5px;
+  }
+  .item-main__title h3::after {
+    width: 150px;
+  }
+  .item-main__text p {
+    font-size: 16px;
+  }
+}

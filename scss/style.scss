@@ -1,3 +1,4 @@
+// ------ << Reset styles >> ------
 * {
   padding: 0;
   margin: 0;
@@ -36,11 +37,15 @@ div {
   display: block;
 }
 
+// ------ << Veriables >> ------
+
 $ff-title: 'Forum', cursive;
 $ff-link: 'Roboto', sans-serif;
 $col-gold: #9d8665;
 $col-black: #030303;
 $col-dark-red: #710707;
+
+// ------ << Main >> ------
 
 body {
   font-family: $ff-title;
@@ -73,7 +78,7 @@ body {
     position: absolute;
     left: 0;
     bottom: -28px;
-    background-color: #710707;
+    background-color: $col-dark-red;
   }
   &__galary {
     display: flex;
@@ -125,4 +130,146 @@ body {
   }
 }
 
+// ------ << Adaptive >> ------
 
+@media (max-width: 1416px) {
+  .main {
+    &__container {
+      max-width: 984px;
+      padding: 0;
+    }
+
+    &__title h1 {
+      font-size: 50px;
+      margin-top: 64px;
+      margin-left: 0;
+    }
+    &__title h1::after {
+      width: 984px;
+      bottom: -14px;
+    }
+    &__galary {
+      justify-content: space-around;
+      margin-top: 74px;
+      column-gap: 0px;
+      padding: 0 55px;
+    }
+  }
+  .item-main {
+    margin-bottom: 47px;
+    left: 0;
+    &__link {
+    }
+
+    &__img img {
+      width: 330px;
+      height: 215px;
+    }
+
+    &__title h3 {
+      font-size: 28px;
+      letter-spacing: 3px;
+      margin-top: 22px;
+    }
+    &__title h3::after {
+      width: 150px;
+      bottom: -9px;
+    }
+
+    &__text p {
+      font-size: 20px;
+    }
+    &__text p:last-child {
+      font-size: 16px;
+    }
+  }
+}
+
+@media (max-width: 1015px) {
+  .main {
+    &__container {
+      max-width: 728px;
+      padding: 0;
+    }
+
+    &__title h1 {
+      font-size: 40px;
+      margin-top: 64px;
+      margin-left: 0;
+    }
+    &__title h1::after {
+      width: 728px;
+      bottom: -6px;
+    }
+    &__galary {
+      margin-top: 46px;
+      padding: 0px 28px;
+    }
+  }
+  .item-main {
+    margin-bottom: 19px;
+    left: 0;
+
+    &__img img {
+      width: 280px;
+      height: 180px;
+    }
+
+    &__title h3 {
+      font-size: 22px;
+      letter-spacing: 3px;
+      margin-top: 18px;
+    }
+    &__title h3::after {
+      width: 150px;
+      bottom: -7px;
+    }
+
+    &__text p {
+      font-size: 18px;
+    }
+    &__text p:last-child {
+      font-size: 16px;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .main {
+    &__container {
+      max-width: 380px;
+    }
+
+    &__title h1 {
+      font-size: 28px;
+      margin-top: 18px;
+    }
+    &__title h1::after {
+      width: 380px;
+      bottom: 3px;
+    }
+    &__galary {
+      margin-top: 37px;
+    }
+  }
+  .item-main {
+    margin-bottom: 16px;
+
+    &__img img {
+      width: 280px;
+      height: 180px;
+    }
+
+    &__title h3 {
+      font-size: 18px;
+      letter-spacing: 5px;
+    }
+    &__title h3::after {
+      width: 150px;
+    }
+
+    &__text p {
+      font-size: 16px;
+    }
+  }
+}
