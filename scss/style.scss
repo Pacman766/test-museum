@@ -1,0 +1,42 @@
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+*,
+*:before,
+*:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+$fft: 'Forum', cursive;
+$ffl: 'Roboto', sans-serif;
+$col-gold: #9d8665;
+$col-black: #030303;
+$col-dark-red: #710707;
+
+body {
+  background-color: #000;
+}
+
+.main {
+  &__title {
+    font-family: $fft;
+  }
+  &__galary {
+  }
+  &__section {
+  }
+}
+.title {
+}
+.item-main {
+  &__img {
+  }
+  &__title {
+  }
+  &__link {
+  }
+}
