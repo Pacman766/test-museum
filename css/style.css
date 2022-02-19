@@ -11,10 +11,132 @@
   box-sizing: border-box;
 }
 
+html,
 body {
-  background-color: #000;
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
 }
 
-.main__title {
+a:focus,
+a:active {
+  outline: none;
+}
+
+a,
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+div {
+  display: block;
+}
+
+body {
   font-family: "Forum", cursive;
+}
+
+.main {
+  display: block;
+}
+
+.main__container {
+  margin: 0 auto;
+  max-width: 1480px;
+  padding: 0 20px;
+}
+
+.main__title h1 {
+  font-family: "Forum", cursive;
+  font-size: 80px;
+  font-weight: 400;
+  letter-spacing: 5px;
+  line-height: 90px;
+  text-transform: uppercase;
+  color: #9d8665;
+  position: relative;
+  margin-top: 140px;
+  margin-left: 7px;
+}
+
+.main__title h1::after {
+  content: '';
+  width: 100%;
+  height: 3px;
+  position: absolute;
+  left: 0;
+  bottom: -28px;
+  background-color: #710707;
+}
+
+.main__galary {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-top: 103px;
+  -webkit-column-gap: 20px;
+          column-gap: 20px;
+}
+
+.item-main {
+  position: relative;
+  margin-bottom: 70px;
+  left: 8px;
+}
+
+.item-main__img {
+  height: 100%;
+  max-width: 100%;
+}
+
+.item-main__title h3 {
+  margin-top: 23px;
+  position: relative;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 35px;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  color: #030303;
+}
+
+.item-main__title h3::after {
+  content: '';
+  height: 2px;
+  width: 300px;
+  position: absolute;
+  left: 0;
+  bottom: -11px;
+  background-color: #710707;
+}
+
+.item-main__text p {
+  margin-top: 22px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 200;
+  font-size: 22px;
+  line-height: 26px;
+  color: #030303;
+}
+
+.item-main__text p:last-child {
+  font-size: 18px;
+  margin-top: 8px;
 }
